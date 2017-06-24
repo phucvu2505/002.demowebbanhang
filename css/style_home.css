@@ -1,0 +1,75 @@
+﻿body {
+}
+
+.button_contact {
+    position: absolute;
+    top: 70%;
+    left: 42%;
+    color: gray;
+    background-color: #ffffff;
+    transition: all 2s ease;
+    background: rgba(255,255,255,0.3);
+}
+
+.text_email {
+    border: dotted;
+    font-style: italic;
+    width: 60%;
+    top: 50%;
+    left: 20%;
+    position: absolute;
+}
+
+.button_subcribe {
+    position: absolute;
+    top: 70%;
+    left: 36%;
+    background-color: #FF4081;
+    color: #FFC0D4;
+}
+
+.name_product {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+.producttype {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10px;
+}
+
+.prices {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding: 0px;
+}
+
+.discount {
+    float: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10px;
+    padding-top: 10px;
+    padding-right: 20px;
+}
+
+.shoppingnow{
+    position:absolute;
+    top:70%;
+    right:25%;
+    color:#ffffff;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.shoppingnow2{
+    position:absolute;
+    right:5%;
+    bottom:25%;
+    font-size:13px;
+    color:black;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.header_button{
+    color:deeppink;
+}
+
