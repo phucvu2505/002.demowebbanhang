@@ -2755,6 +2755,7 @@ ul.multi-column-dropdown h6 {
 }
 .cd-search {
     top: 36%;
+    float:right;
 }
 .logo-nav-left1 {
     width: 48%;
@@ -3172,7 +3173,9 @@ h3.tittle1, h3.tittle {
 .core-slider__carousel .core-slider_arrow__left {
     left: 19px !important;
 }
-.core-slider__carousel .core-slider_arrow__right {
+.core-slider__carousel .core-
+
+_arrow__right {
     right: 19px !important;
 }	
 }

@@ -1,2 +1,352 @@
 ﻿body {
 }
+
+.chu-diamon{
+    left:15%;
+    color:#C9C9C9;
+}
+
+.chu-diamon:hover{
+    color:#C83E6F;
+    left:15%;
+    cursor:pointer;
+}
+
+/*Resposive*/
+@media (min-width: 320px) {
+    .anh_main_About {
+        position: absolute;
+        top: 10%;
+        left: 32%;
+        z-index: 2;
+        width: 40%;
+    }
+
+    .anh_1_About {
+        position: absolute;
+        top: 5%;
+        left: 15%;
+        z-index: 1;
+        width: 22.5%;
+    }
+
+    .anh_2_About {
+        position: absolute;
+        top: 45%;
+        right: 12%;
+        z-index: 1;
+        width: 20%;
+    }
+
+    .anh_3_About {
+        position: absolute;
+        right: 17%;
+        z-index: 1;
+        width: 15%;
+    }
+
+    .anh_4_About {
+        position: absolute;
+        top: 57%;
+        left: 20%;
+        z-index: 1;
+        width: 20%;
+    }
+
+    .img {
+        border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border: solid;
+        border-color: #EBEBAE;
+        border-width: 3px;
+    }
+
+    .khung-anh-about {
+        height: 300px;
+        margin-top: 50px;
+        margin-bottom: 5px;
+    }
+}
+
+@media (min-width: 461px) {
+    .anh_main_About {
+        position: absolute;
+        top: 10%;
+        left: 32%;
+        z-index: 2;
+        width: 35%;
+    }
+
+    .anh_1_About {
+        position: absolute;
+        top: 5%;
+        left: 15%;
+        z-index: 1;
+        width: 21%;
+    }
+
+    .anh_2_About {
+        position: absolute;
+        top: 45%;
+        right: 12%;
+        z-index: 1;
+        width: 20%;
+    }
+
+    .anh_3_About {
+        position: absolute;
+        right: 17%;
+        z-index: 1;
+        width: 15%;
+    }
+
+    .anh_4_About {
+        position: absolute;
+        top: 64%;
+        left: 20%;
+        z-index: 1;
+        width: 20%;
+    }
+
+    .img {
+        border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border: solid;
+        border-color: #EBEBAE;
+        border-width: 3px;
+    }
+
+    .khung-anh-about {
+        height: 600px;
+        margin-top: 50px;
+        margin-bottom: 5px;
+    }
+}
+
+@media (min-width: 641px) {
+    .anh_main_About {
+        position: absolute;
+        top: 10%;
+        left: 32%;
+        z-index: 2;
+        width: 35%;
+    }
+
+    .anh_1_About {
+        position: absolute;
+        top: 5%;
+        left: 15%;
+        z-index: 1;
+        width: 21%;
+    }
+
+    .anh_2_About {
+        position: absolute;
+        top: 45%;
+        right: 12%;
+        z-index: 1;
+        width: 20%;
+    }
+
+    .anh_3_About {
+        position: absolute;
+        right: 17%;
+        z-index: 1;
+        width: 14%;
+    }
+
+    .anh_4_About {
+        position: absolute;
+        top: 64%;
+        left: 20%;
+        z-index: 1;
+        width: 16%;
+    }
+
+    .img {
+        border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border: solid;
+        border-color: #EBEBAE;
+        border-width: 4px;
+    }
+
+    .khung-anh-about {
+        height: 600px;
+        margin-top: 50px;
+        margin-bottom: 5px;
+    }
+}
+
+@media (min-width:961px) {
+    .anh_main_About {
+        position: absolute;
+        top: 20%;
+        left: 34%;
+        z-index: 2;
+        width: 35%;
+    }
+
+    .anh_1_About {
+        position: absolute;
+        top: 10%;
+        left: 15%;
+        z-index: 1;
+        width: 24%;
+    }
+
+    .anh_2_About {
+        position: absolute;
+        top: 55%;
+        right: 12%;
+        z-index: 1;
+        width: 20%;
+    }
+
+    .anh_3_About {
+        position: absolute;
+        right: 18%;
+        z-index: 1;
+        width: 14%;
+    }
+
+    .anh_4_About {
+        position: absolute;
+        top: 68%;
+        left: 20%;
+        z-index: 1;
+        width: 16%;
+    }
+
+    .img {
+        border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border: solid;
+        border-color: #EBEBAE;
+        border-width: 4px;
+    }
+
+    .khung-anh-about {
+        height: 650px;
+        margin-top: 50px;
+        margin-bottom: 5px;
+    }
+}
+
+@media (min-width:1025px) {
+    .anh_main_About {
+        position: absolute;
+        top: 20%;
+        left: 32%;
+        z-index: 2;
+        width: 35%;
+    }
+
+    .anh_1_About {
+        position: absolute;
+        top: 10%;
+        left: 15%;
+        z-index: 1;
+        width: 22%;
+    }
+
+    .anh_2_About {
+        position: absolute;
+        top: 52%;
+        right: 12%;
+        z-index: 1;
+        width: 20%;
+    }
+
+    .anh_3_About {
+        position: absolute;
+        right: 18%;
+        z-index: 1;
+        width: 16%;
+    }
+
+    .anh_4_About {
+        position: absolute;
+        top: 68%;
+        left: 20%;
+        z-index: 1;
+        width: 20%;
+    }
+
+    .img {
+        border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border: solid;
+        border-color: #EBEBAE;
+        border-width: 4px;
+    }
+
+    .khung-anh-about {
+        height: 700px;
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width:1281px) {
+    .anh_main_About {
+        position: absolute;
+        top: 20%;
+        left: 32%;
+        z-index: 2;
+        width: 33%;
+    }
+
+    .anh_1_About {
+        position: absolute;
+        top: 5%;
+        left: 15%;
+        z-index: 1;
+        width: 22.5%;
+    }
+
+    .anh_2_About {
+        position: absolute;
+        top: 55%;
+        right: 17%;
+        z-index: 1;
+        width: 16%;
+    }
+
+    .anh_3_About {
+        position: absolute;
+        right: 24%;
+        z-index: 1;
+        width: 14%;
+    }
+
+    .anh_4_About {
+        position: absolute;
+        top: 70%;
+        left: 20%;
+        z-index: 1;
+        width: 15%;
+    }
+
+    .img {
+        border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border: solid;
+        border-color: #EBEBAE;
+        border-width: 8px;
+    }
+
+    .khung-anh-about {
+        height: 800px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+}
+
+
