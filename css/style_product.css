@@ -1,2 +1,63 @@
 ﻿body {
 }
+
+.chu_producttitle01 {
+    font-size: 2em;
+    color: #86837e;
+    padding-top: 2%;
+    padding-left: 4%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.chu_SKU {
+    padding-left: 4%;
+    font-size: 0.85em;
+    color: #A5A5A5;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.hinhsao_pro {
+    float: left;
+    padding-left: 4%;
+    padding-top: 1%;
+}
+
+.price_pro {
+    position: absolute;
+    top: 18%;
+    left: 7%;
+    color: #DB004E;
+    font-size: 3em;
+}
+
+.icon_share_pro {
+    margin-top: 30%;
+    margin-left: 4%;
+}
+
+.Lorem_pro {
+    margin-left: 4%;
+    margin-top: 7%;
+    color: #6F6D68;
+}
+
+.number_pro {
+    margin-left: 4%;
+    margin-top: 10%;
+}
+
+.color_pro {
+    margin-left: 4%;
+    margin-top: 15%;
+}
+
+.button_AddtoCart_pro {
+    margin-top: 11%;
+    margin-left: 4%;
+}
+
+.moreinfo_pro {
+    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;
+    color: #9A9690;
+}
