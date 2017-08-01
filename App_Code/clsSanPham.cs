@@ -51,7 +51,7 @@ public class clsSanPham
         {
             //Ghi log nếu lỗi
             OsPortal.oFileHelper.WriteLogErr(strClassName, "fncGetListSP", ex.ToString());
-            return new DataTable(); ;
+            return new DataTable();
         }
     }
 }

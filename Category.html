@@ -12,6 +12,8 @@
     <script src="js/main.js"></script>
     <script src="js/simpleCart.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="js/SanPham.js"></script>
+    <script src="js/DanhMuc.js"></script>
 </head>
 <body>
     <!-- header -->
@@ -120,18 +122,24 @@
             <!--categories-->
             <div>
                 <div class="chu_menuleft_cate">Categories</div>
-                <ul class="nav nav-pills nav-stacked admin-menu">
-                    <li class="active"><a href="#" data-target-id="home">Push up</a></li>
-                    <li><a href="#" data-target-id="widgets">Lightly Lined & Unlined</a></li>
-                    <li><a href="#" data-target-id="pages">Strapless & Multi-Way</a></li>
-                    <li><a href="#" data-target-id="charts">Balconnet</a></li>
-                    <li><a href="#" data-target-id="table">Full Coverage</a></li>
-                    <li><a href="#" data-target-id="forms">Demi</a></li>
-                    <li><a href="#" data-target-id="calender">Front-Close</a></li>
-                    <li><a href="#" data-target-id="library">Recerback</a></li>
-                    <li><a href="#" data-target-id="applications">Bralettes & Crop Bustiers</a></li>
-                    <li><a href="#" data-target-id="settings">Backless & Bra Accessories</a></li>
-                </ul>
+                <div class="dropdown" id="danhmuc_left">
+                    <!--<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                        LINGERIES
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="nav nav-pills nav-stacked admin-menu dropdown-menu">
+                        <li class="active"><a href="#" data-target-id="home">Push up</a></li>
+                        <li><a href="#" data-target-id="widgets">Lightly Lined & Unlined</a></li>
+                        <li><a href="#" data-target-id="pages">Strapless & Multi-Way</a></li>
+                        <li><a href="#" data-target-id="charts">Balconnet</a></li>
+                        <li><a href="#" data-target-id="table">Full Coverage</a></li>
+                        <li><a href="#" data-target-id="forms">Demi</a></li>
+                        <li><a href="#" data-target-id="calender">Front-Close</a></li>
+                        <li><a href="#" data-target-id="library">Recerback</a></li>
+                        <li><a href="#" data-target-id="applications">Bralettes & Crop Bustiers</a></li>
+                        <li><a href="#" data-target-id="settings">Backless & Bra Accessories</a></li>
+                    </ul>-->
+                </div>
             </div>
             <!--end categories-->
             <!--search by color-->
@@ -189,8 +197,8 @@
         <div class="col-md-9 col-lg-9 col-sm-9 col-xs-9 menu_right" style="padding:10px">
             <!--san pham-->
             <div class="admin-content" id="home">
-                <div class="col-md-12" style="padding:0px">
-                    <div class="col-md-4" style="padding:5px">
+                <div id="lingeres_pushup">
+                    <!--<div class="col-md-4" style="padding:5px">
                         <img src="image/category/sp1_cate.png" style="width:100%" />
                         <div class="cod-md-12" style="margin:5px">
                             <p class="name_product">Product tile_01</p>
@@ -246,11 +254,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-
-                <div class="col-md-12" style="padding:0px">
-                    <div class="col-md-4" style="padding:5px">
+                    </div>-->
+                    <!--<div class="col-md-4" style="padding:5px">
                         <img src="image/category/sp4_cate.png" style="width:100%" />
                         <div class="cod-md-12" style="margin:5px">
                             <p class="name_product">Product tile_01</p>
@@ -259,7 +264,7 @@
                                 <div class="prices">
                                     $ 12.50
                                     <div style="float:right">
-                                        <!--<div class="discount_cate">̶F̶̶R̶̶O̶̶M̶  ̶1̶̶9̶̶.̶̶0̶̶0̶</div>-->
+                                        <div class="discount_cate">̶F̶̶R̶̶O̶̶M̶  ̶1̶̶9̶̶.̶̶0̶̶0̶</div>
                                         <img src="image/star.png" alt="1" title="Dày cộp" />
                                         <img src="image/star.png" alt="2" title="Dày" />
                                         <img src="image/star.png" alt="3" title="Hơi mỏng" />
@@ -307,11 +312,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-
-                <div class="col-md-12" style="padding:0px">
-                    <div class="col-md-4" style="padding:5px">
+                    </div>-->
+                    <!--<div class="col-md-4" style="padding:5px">
                         <img src="image/category/sp7_cate.png" style="width:100%" />
                         <div class="cod-md-12" style="margin:5px">
                             <p class="name_product">Product tile_01</p>
@@ -348,7 +350,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
             </div>
             <div class="col-md-12 well admin-content" id="widgets">
