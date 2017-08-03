@@ -24,7 +24,7 @@ public class clsDanhMuc
     ///Lấy danh sách danh mục
     /// </summary>
     /// <returns></returns>
-    public static DataTable fncGetListDM(int iDM_DanhMucCha_ID, int iDM_ID, string strDM_TenDanhMuc)
+    public static DataTable fncGetListDM(int iDM_DanhMucCha_ID, int iDM_ID)
     {
         try
         {
@@ -34,7 +34,6 @@ public class clsDanhMuc
             {
                 new SqlParameter("@P_DM_DanhMucCha_ID", iDM_DanhMucCha_ID)
                ,new SqlParameter("@P_DM_ID", iDM_ID)
-               ,new SqlParameter("@P_DM_TenDanhMuc", strDM_TenDanhMuc)
             });
 
             //Kiểm tra các trường hợp null

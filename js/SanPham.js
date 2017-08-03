@@ -1,12 +1,12 @@
 ﻿$(document).ready(function () {
-    xGetSP(1, 8);
-    xGetSP(2, 8);
-    xGetSP(2, 4);
+    xGetSP(1, 8, 0);
+    xGetSPCategory(1, 8, 0);
+    xGetSPHot(2, 4, 0);
   
 });
 
 //Lấy danh sách sản phẩm
-function xGetSP(i_currpage, i_pagesize) {
+function xGetSP(i_currpage, i_pagesize, iDM_ID) {
     $.ajax({
         type: "POST",
         url: "/API.aspx/fncGetListSP",
@@ -15,14 +15,14 @@ function xGetSP(i_currpage, i_pagesize) {
             + ',iSP_ID: ' + 0
             + ',strSP_TenSanPham: "" '
             + ',fSP_DonGia: ' + 0
-            + ',strDM_TenDanhMuc: "" '
-            + ',strNCC_TenNhaCungCap: "" '
+            + ',iDM_ID: ' + iDM_ID
+            + ',iNCC_ID: ' + 0
         + '}',
         contentType: "application/json; charset=utf-8",
         dataType: "json",
         success: function (response) {
             var data = response.d;
-            xBuildListSP(data, '#arrivals','#lingeres_pushup', '#hot');
+            xBuildListSP(data, '#arrivals', '#hot');
             console.log(data);
             //alert(data);
         },
@@ -41,7 +41,7 @@ function xGetSP(i_currpage, i_pagesize) {
         }
     });
 
-    function xBuildListSP(data, arrivals, lingeres_pushup, hot) {
+    function xBuildListSP(data, arrivals, hot) {
         var objData = jQuery.parseJSON(data);
         //$("#tblSanPham ").empty();
         //for (var i = 0; i < objData.length; i++) {
@@ -143,7 +143,46 @@ function xGetSP(i_currpage, i_pagesize) {
             }
         });
         console.log(strVar);
+    }
+}
 
+function xGetSPCategory(i_currpage, i_pagesize, iDM_ID) {
+    $.ajax({
+        type: "POST",
+        url: "/API.aspx/fncGetListSP",
+        data: '{iCURRPAGE: ' + i_currpage
+            + ',iPAGESIZE: ' + i_pagesize
+            + ',iSP_ID: ' + 0
+            + ',strSP_TenSanPham: "" '
+            + ',fSP_DonGia: ' + 0
+            + ',iDM_ID: ' + iDM_ID
+            + ',iNCC_ID: ' + 0
+        + '}',
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        success: function (response) {
+            var data = response.d;
+            xBuildListSP(data,'#lingeres_pushup');
+            console.log(data);
+            //alert(data);
+        },
+        failure: function (response) {
+            var data = response.d;
+            //xBuildListSP(data);
+            console.log(data);
+            alert(data);
+
+        },
+        error: function (response) {
+            var data = response.d;
+            //xBuildListSP(data);
+            console.log(data);
+            alert(data);
+        }
+    });
+
+    function xBuildListSP(data, lingeres_pushup) {
+        var objData = jQuery.parseJSON(data);
         $(lingeres_pushup).empty();
         var strVar = "";
 
@@ -176,7 +215,46 @@ function xGetSP(i_currpage, i_pagesize) {
             strVar += "                    <\/div>";
         }
         $(lingeres_pushup).append(strVar);
+    }
+}
 
+function xGetSPHot(i_currpage, i_pagesize, iDM_ID) {
+    $.ajax({
+        type: "POST",
+        url: "/API.aspx/fncGetListSP",
+        data: '{iCURRPAGE: ' + i_currpage
+            + ',iPAGESIZE: ' + i_pagesize
+            + ',iSP_ID: ' + 0
+            + ',strSP_TenSanPham: "" '
+            + ',fSP_DonGia: ' + 0
+            + ',iDM_ID: ' + iDM_ID
+            + ',iNCC_ID: ' + 0
+        + '}',
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        success: function (response) {
+            var data = response.d;
+            xBuildListSP(data, '#hot');
+            console.log(data);
+            //alert(data);
+        },
+        failure: function (response) {
+            var data = response.d;
+            //xBuildListSP(data);
+            console.log(data);
+            alert(data);
+
+        },
+        error: function (response) {
+            var data = response.d;
+            //xBuildListSP(data);
+            console.log(data);
+            alert(data);
+        }
+    });
+
+    function xBuildListSP(data, hot) {
+        var objData = jQuery.parseJSON(data);
         $(hot).empty();
         var strVar = "";
 
@@ -218,4 +296,3 @@ function xGetSP(i_currpage, i_pagesize) {
         $(hot).append(strVar);
     }
 }
-

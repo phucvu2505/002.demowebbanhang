@@ -14,12 +14,12 @@ public partial class API : System.Web.UI.Page
     }
 
     [WebMethod]
-    public static string fncGetListSP(int iCURRPAGE, int iPAGESIZE, int iSP_ID, string strSP_TenSanPham, float fSP_DonGia, string strDM_TenDanhMuc, string strNCC_TenNhaCungCap)
+    public static string fncGetListSP(int iCURRPAGE, int iPAGESIZE, int iSP_ID, string strSP_TenSanPham, float fSP_DonGia, int iDM_ID, int iNCC_ID)
     {
         try
         {
             //Convert DataTable sang JSON để javascript có thể hiểu
-            return OsPortal.oStringHelper.DataTableToJSON(clsSanPham.fncGetListSP(iCURRPAGE, iPAGESIZE, iSP_ID, strSP_TenSanPham, fSP_DonGia, strDM_TenDanhMuc, strNCC_TenNhaCungCap));
+            return OsPortal.oStringHelper.DataTableToJSON(clsSanPham.fncGetListSP(iCURRPAGE, iPAGESIZE, iSP_ID, strSP_TenSanPham, fSP_DonGia, iDM_ID, iNCC_ID));
         }
         catch (Exception ex)
         {
@@ -28,11 +28,11 @@ public partial class API : System.Web.UI.Page
     }
 
     [WebMethod]
-    public static string fncGetListDM(int iDM_DanhMucCha_ID, int iDM_ID, string strDM_TenDanhMuc)
+    public static string fncGetListDM(int iDM_DanhMucCha_ID, int iDM_ID)
     {
         try
         {
-            return OsPortal.oStringHelper.DataTableToJSON(clsDanhMuc.fncGetListDM(iDM_DanhMucCha_ID, iDM_ID, strDM_TenDanhMuc));
+            return OsPortal.oStringHelper.DataTableToJSON(clsDanhMuc.fncGetListDM(iDM_DanhMucCha_ID, iDM_ID));
         }
         catch(Exception ex)
         {

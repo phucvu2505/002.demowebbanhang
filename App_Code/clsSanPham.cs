@@ -24,7 +24,7 @@ public class clsSanPham
     /// Lấy danh sách sản phẩm
     /// </summary>
     /// <returns></returns>
-    public static DataTable fncGetListSP(int iCURRPAGE, int iPAGESIZE, int iSP_ID, string strSP_TenSanPham, float fSP_DonGia, string strDM_TenDanhMuc, string strNCC_TenNhaCungCap)
+    public static DataTable fncGetListSP(int iCURRPAGE, int iPAGESIZE, int iSP_ID, string strSP_TenSanPham, float fSP_DonGia, int iDM_ID, int iNCC_ID)
     {
         try
         {
@@ -36,8 +36,8 @@ public class clsSanPham
                    ,new SqlParameter("@P_SP_ID", iSP_ID)
                    ,new SqlParameter("@P_SP_TenSanPham", strSP_TenSanPham)
                    ,new SqlParameter("@P_SP_DonGia", fSP_DonGia)
-                   ,new SqlParameter("@P_DM_TenDanhMuc", strDM_TenDanhMuc)
-                   ,new SqlParameter("@P_NCC_TenNhaCungCap", strNCC_TenNhaCungCap)
+                   ,new SqlParameter("@P_DM_ID", iDM_ID)
+                   ,new SqlParameter("@P_NCC_ID", iNCC_ID)
             });
 
             //Kiểm tra các trường hợp null
